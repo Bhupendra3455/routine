@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+routinename: Deploy to GitHub Pages
 
 on:
   push:
@@ -17,12 +17,12 @@ jobs:
         
     - name: Install dependencies
       run: |
-        cd my-3d-room
+        cd routine
         npm install
         
     - name: Build
       run: |
-        cd my-3d-room
+        cd routine
         npm run build
         
     - name: Deploy to GitHub Pages
